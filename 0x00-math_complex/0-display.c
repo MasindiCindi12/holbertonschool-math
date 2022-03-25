@@ -1,13 +1,3 @@
-#include "main.h"
-
-/**
- * display_complex_number - Prints the representation of a complex number
- *
- * @c: complex number
- * Return: Void
- */
-
-
 #include "holberton.h"
 
 /**
