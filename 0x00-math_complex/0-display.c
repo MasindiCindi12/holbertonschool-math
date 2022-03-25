@@ -7,23 +7,36 @@
  * Return: Void
  */
 
+
+#include "holberton.h"
+
+/**
+* display_complex_number - Display complex number
+* @c: Complex number
+*/
+
 void display_complex_number(complex c)
 {
-  printf("%.9g", c.re);
-  if (c.im)
-    {
-      if (c.im > 0)
+	if (c.re == 0)
 	{
-	  printf(" + ");
+		if (c.im < 0)
+			printf("- %.9gi\n", c.im * (-1));
+		else if (c.im == 0)
+			printf("0\n");
+		else
+			printf("%.9gi\n", c.im);
 	}
-      else
+	else
 	{
-	  printf(" - ");
-	  c.im *= -1;
+		if (c.im < -1)
+			printf("%.9g - %.9gi\n", c.re, c.im * (-1));
+		else if (c.im == -1)
+			printf("%.9g - i\n", c.re);
+		else if (c.im == 0)
+			printf("%.9g\n", c.re);
+		else if (c.im == 1)
+			printf("%.9g + i\n", c.re);
+		else
+			printf("%.9g + %.9gi\n", c.re, c.im);
 	}
-      if (c.im != 1 && c.im != -1)
-	printf("%.9g", c.im);
-      printf("i");
-    }
-  printf("\n");
 }
