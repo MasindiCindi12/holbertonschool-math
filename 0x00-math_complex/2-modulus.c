@@ -29,4 +29,3 @@ b = cos(arg) * m;
 c3->re = b;
 c3->im = a;
 }
-© 2022 Git
