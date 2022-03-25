@@ -2,15 +2,31 @@
 #include <math.h>
 
 /**
-* modulus - return the modulus
-* @c: structure complex
-* Return: c
+* complex_from_mod_arg - update complex
+* @m: double
+* @arg: double
+* @c3: complex
+* Return: void
 */
 
-double modulus(complex c)
+void complex_from_mod_arg(double m, double arg, complex *c3)
 {
-	double mod;
+/* take distance from modulus */
+/* take angle from argument */
+/* senØ = a/c; c = Hypotenuse a = oposite catetus  */
+/* cosØ = b/c; c = Hypotenuse b = adyacent catetus */
+/* tanØ = a/b;  */
 
-	mod = sqrt(pow(c.re, 2) + pow(c.im, 2));
-	return (mod);
+/* apply pitagoras to get the values */
+/* im part */
+double a;
+/* re part */
+double b;
+
+a = sin(arg) * m;
+b = cos(arg) * m;
+
+c3->re = b;
+c3->im = a;
 }
+© 2022 Git
