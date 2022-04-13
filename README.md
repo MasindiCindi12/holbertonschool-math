@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 """C"""
 Math complex 
 
@@ -33,3 +34,7 @@ Math complex
 
 
 holberton.h
+=======
+# holbertonschool-math
+Complex mathematics
+>>>>>>> 0b40305582ff9c5e77255b4f97634d621a04ebfe

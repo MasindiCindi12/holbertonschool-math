@@ -1,14 +1,14 @@
-#include "main.h"
-#include <stdio.h>
+#include "holberton.h"
 
 /**
-* conjugate - return the conjugate
-* @c: structure complex
-* Return: complex
-*/
+ * conjugate - Returns the conjugate of an imaginary number
+ *
+ * @c: Complex number
+ * Return: Conjugate of c
+ */
 
 complex conjugate(complex c)
 {
-c.im *= -1;
-return (c);
+  c.im *= -1;
+  return(c);
 }
