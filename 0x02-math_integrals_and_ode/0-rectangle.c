@@ -29,4 +29,5 @@ w = a;
 		w += width;
 	}
 
-return (
+return (sum);
+}
